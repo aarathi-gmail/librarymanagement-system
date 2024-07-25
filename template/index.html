@@ -1,0 +1,17 @@
+<html>
+    <meta charset="UTF-8">
+    <title>library management system</title>
+    <link rel="stylesheet"  href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>library management system</h1>
+    <h1>books</h2>
+        <ul>
+            {% for book in books%}
+            <li>{{ book.title}}  by {{book.author}} </li>
+            {%endfor %}
+        </ul>
+        <a href="{{url_for('add_book')}}"> ADD A book  </a>
+    </body>
+    </html>
+    

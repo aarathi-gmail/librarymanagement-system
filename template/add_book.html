@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>add a book</title>
+        <link rel="stylesheet"  href="{{url_for('static',filename='style.css')}}" >
+    </head>
+    <body>
+        <h1>add  a book </h1>
+        <form method="post"  action="{{url_for('add_book')}}" >
+            <label for="title">title</label><br>
+            <input type ="text" id="title"  name="title" ><br>
+            <label for="author">author:</label><br>
+            <input type="text" id="author"  name="author"><br><br>
+            <input type="submit" value="add book" >
+        </form>
+        <br>
+        <a href="{{url_for('index')}}">back to home</a>
+    </body>
+    </html>
