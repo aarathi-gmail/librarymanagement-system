@@ -1,0 +1,11 @@
+<html>
+<head>
+<body>
+<h1>set cookie</h1>
+<form action ="/setcookie"  method="post">
+<label for="username">username:</label>
+<input type="text" id="username" name="username required>
+<button type="submit">set cookie</button>
+</form>
+</body>
+</html>
